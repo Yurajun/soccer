@@ -1,6 +1,6 @@
-import svg4everybody from 'svg4everybody';
-import $ from 'jquery';
+// import svg4everybody from 'svg4everybody';
+// import $ from 'jquery'; // eslint-disable-line no-unused-vars
 
-$(() => {
-	svg4everybody();
-});
+// $(() => {
+// 	svg4everybody();
+// });
