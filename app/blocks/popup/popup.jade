@@ -1,0 +1,5 @@
+mixin popup()
+	+b.FORM.popup&attributes(attributes)
+		block
+
+		+e('a').cross(data-remodal-action="cancel")&attributes({'href': '#'}) X

@@ -1,9 +1,65 @@
 extends /blocks/layout-default/layout-default
-include ../blocks/header/header
+include ../blocks/header-logo/header-logo
+include ../blocks/header-goal/header-goal
+include ../blocks/video-one/video-one
+include ../blocks/video-two/video-two
+include ../blocks/stikers/stikers
+include ../blocks/plus-one/plus-one
+include ../blocks/magazine/magazine
+include ../blocks/exchange/exchange
+include ../blocks/phone/phone
+include ../blocks/phone-slide/phone-slide
+include ../blocks/phone-slide/phone-slide
+include ../blocks/stiker-game/stiker-game
+include ../blocks/two-slides/two-slides
+include ../blocks/regulations/regulations
+include ../blocks/desc/desc
+include ../blocks/remodal/remodal
+include ../blocks/popup/popup
 
 block head
-	- var pageTitle = 'CSSSR Project Template';
+	- var pageTitle = 'soccer';
 
 block content
 	+b('div').wrapper_header
-		+header
+		+b('div').content
+			+header-logo
+			+header-goal
+
+	+b('div').wrapper_video
+		+b('div').content
+			+video-one
+				+e('video').video(controls="controls" src="./assets/video/play_like_a_champ.mp4")
+				+e('div').play
+
+	+b('div').wrapper_content._dop-padding
+		+b('div').content
+			+stikers
+			+plus-one
+			+magazine
+	+b('div').wrapper_deg
+		+b('div').content
+			+exchange
+
+	+b('div').wrapper_video._video-two
+		//- +b('div').content
+			+video-two
+				+e('video')(controls="controls" src="assets/video/play_like_a_champ.mp4")
+
+	+b('div').wrapper_content._content-two
+		+b('div').content
+			+phone
+			+phone-slide
+			+stiker-game
+
+	+b('div').wrapper_margin-top
+		+b.content
+			+two-slides
+
+	+b.wrapper_bg-white
+		+b.content
+			//- +e('a').popup-btn(data-remodal-target="popup" href="#") open
+			//- +remodal('popup', 'true', 'true', 'false')
+				//- +popup
+			+regulations(getData('regulations'))
+			+desc

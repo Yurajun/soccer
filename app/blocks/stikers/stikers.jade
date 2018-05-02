@@ -1,0 +1,15 @@
+mixin stikers()
+	+b.stikers&attributes(attributes)
+		block
+
+		+e('div').stikers
+		+b('div').stikers-text
+			+e('p').start.red получай
+			+e('p').center.blue 
+				+e('span') упаковку наклеек <br />
+				+e('span') из 4 шт бесплатно
+			+e('p').end.red
+				| за каждые
+				+e('span') 500 
+				| рублей <br /> 
+				+e('span') в чеке!

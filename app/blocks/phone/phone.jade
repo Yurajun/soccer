@@ -1,0 +1,15 @@
+mixin phone()
+	+b.phone&attributes(attributes)
+		block
+
+		+e.phone
+		+b.phone-text
+			+e.one
+				| скачай
+			+e.two
+				| бесплатное приложение
+			+e.three
+				| &laquo;Играй как чемпион&raquo;
+			+e.wrapp-store
+				+e('a')(href="https://play.google.com/store/apps/details?id=com.tcc.plac" target="_blank")
+				+e('a')(href="https://itunes.apple.com/ru/app/играй-как-чемпион/id1370362949?mt=8" target="_blank")

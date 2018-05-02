@@ -1,0 +1,58 @@
+.stikers
+	position relative
+	padding 60px 0 0 44px
+	display flex
+	justify-content space-between
+
+	&__stikers
+		background-repeat no-repeat
+		background-position center center
+		background-size contain
+		size(640px, 422px)
+		retinaBackground(stikers, png)
+
+.stikers-text
+	position absolute
+	top 66px
+	right 0
+	padding-right 30px
+	font-family main-fone
+	text-align right
+	transform rotate(-11deg)
+
+	&__start
+		position relative
+		right 21px
+		font-size 69px
+		letter-spacing -2.7px
+		text-transform uppercase
+
+	&__center
+		position relative
+		right 15px
+		margin-top -2px
+		font-size 39px
+		line-height .9
+		letter-spacing -1px
+		text-transform uppercase
+
+		& span:first-of-type
+			position relative
+			right 7px
+
+		& span:last-of-type
+			position relative
+			right 25px
+
+	&__end
+		padding-right 28px
+		font-size 40px
+
+		& span:first-of-type
+			position relative
+			top 8px
+			font-weight bold
+
+		& span:last-of-type
+			position relative
+			right 17px

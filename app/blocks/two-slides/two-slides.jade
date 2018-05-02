@@ -1,0 +1,14 @@
+mixin two-slides()
+	+b.two-slides&attributes(attributes)
+		block
+
+		+b.twoslides-text
+			+e('p').one
+				| получи
+			+e('p').two
+				| доступ к мини игре,
+			+e('p').three
+				| отсканировав &laquo;счастливые&raquo; 
+				+e('span')
+					| qr
+				| -код

@@ -1,0 +1,38 @@
+mixin magazine()
+	+b.magazine&attributes(attributes)
+		block
+
+		+e('div').content
+			+b.magazine-img
+			+b.magazine-text
+
+				+b.magazine-one
+					+e('p').text-one.blue
+						| потрясающий
+					+e('p').text-two.red
+						| альбом для наклеек
+					+e('p').text-three.blue
+						| с секретами утбольного мастерства
+					+e('p').text-four.blue
+						| и специальными уражнениями
+					+e('p').text-five.red
+						+e('span')
+							| за 
+						| 199 руб
+
+				+b.magazine-wrapp__text-img
+					+b.magazine-wrapp__text
+						+b.magazine-two
+							+e('p').text-one.red
+								| собери
+							+e('p').text-two.blue
+								| все наклейки в альбом
+						+b.magazine-three
+							+e('p').text-one.red
+								| получи
+							+e('p').text-two.blue
+								| тренировочный мяч
+							+e('p').text-three.blue
+								| в подарок
+								+e('span') **
+					+b.magazine-wrapp__img

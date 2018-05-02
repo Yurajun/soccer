@@ -1,0 +1,19 @@
+mixin exchange()
+	+b.exchange&attributes(attributes)
+		block
+
+		+e.content
+			+b.exchange-img
+			+b.exchange-text
+				+e('p').one.blue
+					| хочешь собрать 120 наклеек?
+				+e('p').two.blue
+					| не пропусти 
+					+e('span').span-two.red
+						| 23 
+					+e('span').span-twotwo.red
+						| июня
+				+e('p').three.red
+					| день обмена
+					+e('span').span.red
+						| *

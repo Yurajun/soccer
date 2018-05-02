@@ -1,0 +1,110 @@
+.remodal
+	position relative
+
+	&_left-menu
+		position absolute
+		z-index 9
+		left -100vw
+		margin-bottom 0
+		padding 0
+		text-align left
+		border-radius 0
+		transition left .4s
+
+		&.remodal-is-opened
+			left 0
+
+		&.remodal-is-opening
+			animation-duration 0s
+
+	&_galery
+		margin-bottom 0
+		padding 0
+		background-color transparent
+
+.remodal-wrapper
+	padding 0
+
+
+
+.remodal-bg
+	&.remodal-is-opened,
+	&.remodal-is-opening
+		overflow hidden
+		filter blur(6px)
+
+.remodal-bg-mob, .remodal-bg-form
+	&.remodal-is-opened,
+	&.remodal-is-opening
+		filter blur(0)
+
+.remodal-bg-mob, .remodal-bg-form-success
+	&.remodal-is-opened,
+	&.remodal-is-opening
+		filter blur(0)
+
+.remodal-overlay
+	background $remodal-bg
+
+
+@media only screen and (max-width: 959px)
+	.remodal
+
+		&_left-menu
+			width 80.9375vw
+			min-height 100vh
+			background-color transparent
+
+		&_galery
+			padding-top 12.91666666666667vw
+			overflow hidden
+			max-width 89vw
+			min-height 95vh
+
+		&_form
+			margin-bottom 0
+			padding 4.375vw
+			background-color transparent
+			border-radius .8333333333333333vw
+
+
+@media only screen and (min-width: 960px)
+	.remodal
+
+		&_left-menu
+			width 37.4vw
+			min-height 100vh
+			background-color transparent
+
+		&_galery
+			overflow hidden
+			max-width 98vw
+			min-height 95vh
+
+		&_form
+			padding 0
+			width 42.08333333333333vw
+			background-color transparent
+			border-radius .5208333333333333vw
+
+
+/*
+	.remodal
+
+		&_left-menu
+			width 37.4vw
+			min-height 100vh
+			background-color transparent
+
+		&_galery
+			overflow hidden
+			max-width 98vw
+			min-height 95vh
+
+		&_form
+			padding 0
+			width 808px
+			background-color transparent
+			border-radius 10px
+
+*/

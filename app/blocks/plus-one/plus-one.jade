@@ -1,0 +1,14 @@
+mixin plus-one()
+	+b.plus-one&attributes(attributes)
+		block
+
+		+e('div').content
+			+b('div').plus-text
+				+e('p').start.blue
+					+e('span').start-span.red получай 
+					| дополнительные
+				+e('p').center.blue
+					| наклейки, покупая товары партнеров
+				+e('p').end.blue
+					| акции со значком
+			+b('div').plus-one__img

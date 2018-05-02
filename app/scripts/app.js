@@ -4,3 +4,13 @@
 // $(() => {
 // 	svg4everybody();
 // });
+
+// import 'remodal';
+import '../blocks/video-one/video-one';
+
+document.addEventListener('DOMContentLoaded', () => {
+	setTimeout(() => {
+		document.querySelector('body').style.opacity = 1;
+	}, 1000);
+});
+

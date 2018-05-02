@@ -42,3 +42,13 @@ retinaBackground($image, $ext = 'png') {
 		background-image url('../images/' + $image + '@2x.' + $ext)
 	}
 }
+
+font-fase(fontFamily, folder, fontName)
+	@font-face
+		font-family fontFamily
+		src url('../fonts/' + folder +'/' + fontName + '.eot') /* IE9 Compat Modes */
+		src url('../fonts/' + folder +'/' + fontName + '?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+				url('../fonts/' + folder +'/' + fontName + '.woff2' ) format('woff2'), /* Super Modern Browsers */
+				url('../fonts/' + folder +'/' + fontName + '.woff') format('woff'), /* Pretty Modern Browsers */
+				url('../fonts/' + folder +'/' + fontName + '.ttf') format('truetype'), /* Safari, Android, iOS */
+				url('../fonts/' + folder +'/' + fontName + '.svg#svgFontName') format('svg') /* Legacy iOS */

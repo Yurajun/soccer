@@ -1,0 +1,6 @@
+mixin regulations(list)
+	+b('ol').regulations&attributes(attributes)
+		block
+
+		each val in list
+			+e('li') !{val}

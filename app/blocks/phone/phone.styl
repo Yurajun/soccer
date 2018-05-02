@@ -1,0 +1,56 @@
+.phone
+	display flex
+	transform rotate(-11deg)
+	justify-content flex-end
+
+	&__phone
+		position absolute
+		top -38px
+		left 9px
+		background-repeat no-repeat
+		background-position center top
+		background-size cover
+		transform rotate(11deg)
+		size(447px, 710px)
+		retinaBackground(phone, png)
+
+.phone-text
+	margin-top 225px
+	padding 37px 0 45px 262px
+	width 1050px
+	font-family main-fone
+	color share-white
+	background-color phone-text-bg
+
+	&__one
+		font-size 78px
+		text-transform uppercase
+
+	&__two
+		font-size 52px
+
+	&__three
+		margin-bottom 20px
+		font-size 52px
+
+
+	&__wrapp-store
+		display flex
+		justify-content space-between
+		width 470px
+
+		& a:first-of-type
+			width 223px
+			height 69px
+			background-repeat no-repeat
+			background-position center center
+			background-size contain
+			retinaBackground(google-play2, png)
+
+		& a:last-of-type
+			width 223px
+			height 69px
+			background-repeat no-repeat
+			background-position center center
+			background-size contain
+			retinaBackground(appstore2, png)

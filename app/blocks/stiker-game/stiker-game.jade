@@ -1,0 +1,25 @@
+mixin stiker-game()
+	+b.stiker-game&attributes(attributes)
+		block
+
+		+e.img
+		+b.stikergame-text
+			+e('p').one
+				| сканируй
+			+e('p').two
+				+e('span')
+					| qr
+				|-коды со специальных
+			+e('p').three
+				| наклеек
+
+			+e('p').four
+				+e('span')
+					| смотри
+				| , как твой игрок
+			+e('p').five
+				| думонстрирует новые навыки,
+			+e('p').six
+				| которые ты открыл
+		+b.phone-slide__img
+		+b.two-slides__img
