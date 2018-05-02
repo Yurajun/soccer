@@ -2,6 +2,8 @@
 	display flex
 	transform rotate(-11deg)
 	justify-content flex-end
+	@media only screen and (max-width: 768px)
+		// transform rotate(0deg)
 
 	&__phone
 		position absolute
@@ -13,6 +15,11 @@
 		transform rotate(11deg)
 		size(23.28125vw, 36.97916666666667vw)
 		retinaBackground(phone, png)
+		@media only screen and (max-width: 768px)
+			top 1vw
+			left -4.6875vw
+			// transform rotate(-9deg)
+			size(28.28125vw, 42.97916666666667vw)
 
 .phone-text
 	margin-top 11.71875vw
@@ -21,23 +28,33 @@
 	font-family main-fone
 	color share-white
 	background-color phone-text-bg
+	@media only screen and (max-width: 768px)
+		width 75.6875vw
 
 	&__one
 		font-size 4.0625vw
 		text-transform uppercase
+		@media only screen and (max-width: 768px)
+			font-size 10.0625vw
 
 	&__two
 		font-size 2.708333333333333vw
+		@media only screen and (max-width: 768px)
+			font-size 4.2vw
 
 	&__three
 		margin-bottom 1.041666666666667vw
 		font-size 2.708333333333333vw
+		@media only screen and (max-width: 768px)
+			font-size 4.2vw
 
 
 	&__wrapp-store
 		display flex
 		justify-content space-between
 		width 24.47916666666667vw
+		@media only screen and (max-width: 768px)
+			width 48.47916666666667vw
 
 		& a:first-of-type
 			width 11.61458333333333vw
@@ -46,6 +63,8 @@
 			background-position center center
 			background-size contain
 			retinaBackground(google-play2, png)
+			@media only screen and (max-width: 768px)
+				size(23.22vw, 7.2vw)
 
 		& a:last-of-type
 			width 11.61458333333333vw
@@ -54,3 +73,5 @@
 			background-position center center
 			background-size contain
 			retinaBackground(appstore2, png)
+			@media only screen and (max-width: 768px)
+				size(23.22vw, 7.2vw)

@@ -11,6 +11,17 @@
 		top 50%
 		left 50%
 		cursor pointer
+		background-size contain
 		transform translateX(-50%) translateY(-50%)
 		size(3.333333333333333vw, 3.333333333333333vw)
 		retinaBackground(video-play, png)
+
+@media only screen and (max-width: 768px)
+	.video-one
+		height 49.2625vw
+
+		& video
+			height 49.2625vw
+
+		&__play
+			size(9.9999999vw, 9.9999999vw)

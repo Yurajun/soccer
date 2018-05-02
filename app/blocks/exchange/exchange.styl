@@ -5,6 +5,8 @@
 		position relative
 		display flex
 		justify-content flex-end
+		@media only screen and (max-width: 768px)
+			transform rotate(-11deg)
 
 .exchange-img
 	position absolute
@@ -16,6 +18,10 @@
 	size(23.28125vw, 19.58333333333333vw)
 	transform rotate(11deg)
 	retinaBackground(over-stiker, png)
+	@media only screen and (max-width: 768px)
+		top 3.2vw
+		left -3.09375vw
+		size(43vw, 36vw)
 
 .exchange-text
 	width 42.1875vw
@@ -25,26 +31,44 @@
 	&__one
 		font-size 1.822916666666667vw
 		text-indent 2.083333333333333vw
+		@media only screen and (max-width: 768px)
+			font-size 4.8vw
+			line-height 1.2
+			text-indent 0
 	&__two
 		margin-top -.5208333333333333vw
 		font-size 1.822916666666667vw
 		text-indent 1.875vw
+		@media only screen and (max-width: 768px)
+			font-size 4.8vw
+			line-height 1.2
+			text-indent 0
 
 	&__span-two
 		position relative
 		top .46875vw
 		font-size 2.604166666666667vw
+		@media only screen and (max-width: 768px)
+			font-size 6vw
 
 	&__span-twotwo
 		position relative
 		top .46875vw
 		font-size 1.822916666666667vw
+		@media only screen and (max-width: 768px)
+			font-size 5.4vw
 
 	&__three
 		font-size 3.489583333333333vw
 		text-indent 1.458333333333333vw
+		@media only screen and (max-width: 768px)
+			font-size 8vw
 		& span
 			position relative
 			top -1.71875vw
 			left -.7291666666666667vw
 			font-size 1.041666666666667vw
+			@media only screen and (max-width: 768px)
+				top -11.71875vw
+				left 40.270833vw
+				font-size 3vw

@@ -3,6 +3,9 @@
 	padding 3.125vw 0 0 2.291666666666667vw
 	display flex
 	justify-content space-between
+	@media only screen and (max-width: 768px)
+		padding 4vw 0 0
+		flex-direction column
 
 	&__stikers
 		background-repeat no-repeat
@@ -10,6 +13,8 @@
 		background-size contain
 		size(33.33333333333333vw, 21.97916666666667vw)
 		retinaBackground(stikers, png)
+		@media only screen and (max-width: 768px)
+			size(88vw, 47vw)
 
 .stikers-text
 	position absolute
@@ -19,6 +24,9 @@
 	font-family main-fone
 	text-align right
 	transform rotate(-11deg)
+	@media only screen and (max-width: 768px)
+		position relative
+		margin-top -3vw
 
 	&__start
 		position relative
@@ -26,6 +34,9 @@
 		font-size 3.59375vw
 		letter-spacing -.140625vw
 		text-transform uppercase
+		@media only screen and (max-width: 768px)
+			right -1.9vw
+			font-size 10vw
 
 	&__center
 		position relative
@@ -35,18 +46,26 @@
 		line-height .9
 		letter-spacing -.0520833333333333vw
 		text-transform uppercase
+		@media only screen and (max-width: 768px)
+			font-size 6.1vw
 
 		& span:first-of-type
 			position relative
 			right .3645833333333333vw
+			@media only screen and (max-width: 768px)
+				right -2.635417vw
 
 		& span:last-of-type
 			position relative
 			right 1.302083333333333vw
+			@media only screen and (max-width: 768px)
+				right .302083vw
 
 	&__end
 		padding-right 1.458333333333333vw
 		font-size 2.083333333333333vw
+		@media only screen and (max-width: 768px)
+			font-size 6.24vw
 
 		& span:first-of-type
 			position relative
@@ -56,3 +75,6 @@
 		& span:last-of-type
 			position relative
 			right .8854166666666667vw
+			@media only screen and (max-width: 768px)
+				right 1.685417vw
+

@@ -1,5 +1,7 @@
 .magazine
 	display block
+	@media only screen and (max-width: 768px)
+		width 82vw
 
 	&__content
 		position relative
@@ -7,11 +9,18 @@
 		display flex
 		justify-content flex-end
 		transform rotate(-11.5deg)
+		@media only screen and (max-width: 768px)
+			margin-top 6.2vw
+			transform rotate(0deg)
 
 .magazine-text
 	position relative
 	left 3.125vw
 	width 37.5vw
+	@media only screen and (max-width: 768px)
+		top 50vw
+		left -12vw
+		width 72.8vw
 
 .magazine-img
 	position absolute
@@ -23,29 +32,59 @@
 	transform rotate(11.5deg)
 	size(35.98958333333333vw, 31.875vw)
 	retinaBackground(magazine, png)
+	@media only screen and (max-width: 768px)
+		left -3.291666666666667vw
+		size(73vw, 68vw)
+		transform rotate(13deg)
 
 .magazine-one
 	position relative
 	left -1.041666666666667vw
 	text-transform uppercase
 	font-family main-fone
+	@media only screen and (max-width: 768px)
+		left 2vw
+		transform rotate(-11.5deg)
 
 	&__text-one
+		position relative
 		font-size 1.354166666666667vw
 		text-indent 1.458333333333333vw
+		@media only screen and (max-width: 768px)
+			font-size 4vw
+			line-height 1.2
+			text-indent 2.3vw
 	&__text-two
+		position relative
 		font-size 2.03125vw
 		text-indent 1.145833333333333vw
+		@media only screen and (max-width: 768px)
+			position relative
+			width 85vw
+			font-size 5.8vw
+			line-height 1.2
 	&__text-three
 		font-size 1.354166666666667vw
 		text-indent .78125vw
+		@media only screen and (max-width: 768px)
+			font-size 3.4vw
+			line-height 1.2
+			text-indent -.7vw
 	&__text-four
 		font-size 1.458333333333333vw
 		text-indent .4166666666666667vw
+		@media only screen and (max-width: 768px)
+			font-size 3.6vw
+			line-height 1.2
+			text-indent -1.6vw
 	&__text-five
 		font-size 1.614583333333333vw
 		text-indent .3125vw
 		text-transform lowercase
+		@media only screen and (max-width: 768px)
+			font-size 6vw
+			line-height 1.2
+			text-indent -2.2vw
 		& span
 			text-transform uppercase
 
@@ -54,52 +93,77 @@
 	margin-top 2.864583333333333vw
 	display flex
 	justify-content space-between
-
+	@media only screen and (max-width: 768px)
+		transform rotate(-11.5deg)
 
 .magazine-two
 	position relative
 	left -2.395833333333333vw
-	text-transform uppercase
 	font-family main-fone
+	line-height 1.2
+	text-transform uppercase
+	@media only screen and (max-width: 768px)
+		left 2.2vw
 
 	&__text-one
 		font-size 3.125vw
 		text-indent .1041666666666667vw
+		@media only screen and (max-width: 768px)
+			font-size 9vw
 
 	&__text-two
 		margin-top -.4166666666666667vw
 		font-size 1.5625vw
 		text-indent -.4166666666666667vw
+		@media only screen and (max-width: 768px)
+			font-size 4.5vw
 
 	&__text-three
 		font-size 1.822916666666667vw
+		@media only screen and (max-width: 768px)
+			font-size 9vw
 
 .magazine-three
 	position relative
 	left -3.90625vw
 	margin-top .5208333333333333vw
 	font-family main-fone
+	line-height 1.2
 	text-transform uppercase
+	@media only screen and (max-width: 768px)
+		left -.9vw
 
 	&__text-one
 		margin-top -.2604166666666667vw
 		font-size 3.229166666666667vw
 		text-indent .625vw
+		@media only screen and (max-width: 768px)
+			font-size 9vw
+			text-indent 0
 
 	&__text-two
 		font-size 1.822916666666667vw
 		text-indent .2604166666666667vw
+		@media only screen and (max-width: 768px)
+			font-size 4.5vw
+			text-indent -1vw
 
 	&__text-three
 		position relative
 		left -.15625vw
 		font-size 1.510416666666667vw
+		@media only screen and (max-width: 768px)
+			font-size 4.5vw
+			text-indent -1.5vw
 
 		& span
 			position relative
 			top -.5208333333333333vw
 			left -.15625vw
 			font-size 1.145833333333333vw
+			@media only screen and (max-width: 768px)
+				top -1.3208333333333333vw
+				font-size 3.4vw
 
 .magazine-wrapp__img
 	position absolute
@@ -111,4 +175,8 @@
 	transform rotate(11deg)
 	size(10.83333333333333vw, 10.72916666666667vw)
 	retinaBackground(ball2, png)
+	@media only screen and (max-width: 768px)
+		top 24vw
+		right -11vw
+		size(15vw, 16vw)
 

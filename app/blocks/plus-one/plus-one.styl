@@ -1,6 +1,8 @@
 .plus-one
 	margin-top -1.666666666666667vw
 	display block
+	@media only screen and (max-width: 768px)
+		margin-top 9.333333vw
 
 	&__content
 		position relative
@@ -19,25 +21,42 @@
 	transform rotate(10.5deg)
 	size(8.854166666666667vw, 8.333333333333333vw)
 	retinaBackground(plusone2, png)
+	@media only screen and (max-width: 768px)
+		size(17vw, 16vw)
+		top 14vw
+		right 2.604166666666667vw
+
 
 .plus-text
 	margin-top -2.03125vw
 	font-family main-fone
 	text-transform uppercase
 	font-size 2.03125vw
+	@media only screen and (max-width: 768px)
+		font-size 5vw
 
 	&__start
 		text-indent 7.96875vw
 
 	&__start-span
 		font-size 3.854166666666667vw
+		@media only screen and (max-width: 768px)
+			margin-bottom 1.8vw
+			display block
+			font-size 10.4vw
 
 	&__center
 		text-indent 3.125vw
 		letter-spacing -.0416666666666667vw
+		@media only screen and (max-width: 768px)
+			line-height 1.2
+			text-indent -.875vw
 
 	&__end
 		position relative
 		top .2604166666666667vw
 		right 1.25vw
 		text-align right
+		@media only screen and (max-width: 768px)
+			line-height 1.2
+			text-align left

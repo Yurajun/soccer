@@ -4,7 +4,10 @@ body
 	background-position center top
 	background-size contain
 	opacity 0
+	transform scale(.8)
 	retinaBackground(greed3, png)
+	@media only screen and (max-width: 768px)
+		transform scale(1)
 
 .wrapper
 	background-repeat repeat-y
@@ -12,6 +15,9 @@ body
 	background-size contain
 
 	&_header
+		margin-top -16vw
+		@media only screen and (max-width: 768px)
+			margin-top 0
 		// retinaBackground(greed2, png)
 
 	&_video
@@ -29,6 +35,8 @@ body
 
 	&_content-two
 		padding-bottom 6.302083333333333vw
+		@media only screen and (max-width: 768px)
+			margin-top 35vw
 
 	&_dop-padding
 		padding-bottom 15.625vw
@@ -43,6 +51,10 @@ body
 		height 20.83333333333333vw
 		// background-color #fff
 		transform rotate(-11deg)
+		@media only screen and (max-width: 768px)
+			margin-top 40vw
+			width 100%
+			transform rotate(0deg)
 
 	&_margin-top
 		position relative
