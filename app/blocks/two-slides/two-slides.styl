@@ -15,6 +15,10 @@
 		transform rotate(11deg)
 		size(32.5vw, 29.375vw)
 		retinaBackground(two-stikers, png)
+		@media only screen and (max-width: 768px)
+			top 14.45833333333333vw
+			left -6.5625vw
+			size(41vw, 36vw)
 
 .twoslides-text
 	position relative
@@ -24,16 +28,25 @@
 	font-family main-fone
 	color share-white
 	background-color phone-text-bg3
+	@media only screen and (max-width: 768px)
+		padding-left 20vw
+		width 67.875vw
 
 	&__one
 		font-size 2.34375vw
 		text-transform uppercase
+		@media only screen and (max-width: 768px)
+			font-size 4.34375vw
 
 	&__two
 		font-size 1.5625vw
+		@media only screen and (max-width: 768px)
+			font-size 3vw
 
 	&__three
 		font-size 1.5625vw
+		@media only screen and (max-width: 768px)
+			font-size 3vw
 
 		& span
 			text-transform uppercase

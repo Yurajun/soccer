@@ -4,6 +4,8 @@
 	display flex
 	justify-content flex-end
 	transform rotate(-11deg)
+	@media only screen and (max-width: 768px)
+		padding 4vw 0
 
 	&__img
 		position absolute
@@ -16,6 +18,10 @@
 		transform rotate(11deg)
 		size(18.85416666666667vw, 27.34375vw)
 		retinaBackground(stiker-game, png)
+		@media only screen and (max-width: 768px)
+			top -26.625vw
+			left 3.4375vw
+			size(32.85416666666667vw, 48.34375vw)
 
 .two-slides
 	&__img
@@ -36,14 +42,21 @@
 	font-family main-fone
 	color share-white
 	background-color text-red
+	@media only screen and (max-width: 768px)
+		margin-top 3vw
+		width 64.875vw
 
 	&__one
 		margin-bottom -.2604166666666667vw
 		font-size 2.708333333333333vw
 		text-transform uppercase
+		@media only screen and (max-width: 768px)
+			font-size 4vw
 
 	&__two
 		font-size 1.770833333333333vw
+		@media only screen and (max-width: 768px)
+			font-size 3.2vw
 
 		& span
 			text-transform uppercase
@@ -51,16 +64,26 @@
 	&__three
 		margin-bottom .78125vw
 		font-size 1.770833333333333vw
+		@media only screen and (max-width: 768px)
+			font-size 3.2vw
 
 	&__four
 		font-size 1.770833333333333vw
+		@media only screen and (max-width: 768px)
+			font-size 3.2vw
 
 		& span
 			font-size 2.760416666666667vw
 			text-transform uppercase
+			@media only screen and (max-width: 768px)
+				font-size 4vw
 
 	&__five
 		font-size 1.770833333333333vw
+		@media only screen and (max-width: 768px)
+			font-size 3.2vw
 
 	&__six
 		font-size 1.770833333333333vw
+		@media only screen and (max-width: 768px)
+			font-size 3.2vw

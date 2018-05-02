@@ -4,6 +4,8 @@
 	display flex
 	transform rotate(-10.7deg)
 	justify-content flex-end
+	@media only screen and (max-width: 768px)
+		margin-top 10vw
 
 	&__img
 		position absolute
@@ -15,6 +17,11 @@
 		transform rotate(10.7deg)
 		size(17.8125vw, 23.17708333333333vw)
 		retinaBackground(phone-slide, png)
+		@media only screen and (max-width: 768px)
+			top -25.39583333333333vw
+			right -8.145833333333333vw
+			display none
+			size(26.8125vw, 32.17708333333333vw)
 
 .phonesld-text
 	padding .46875vw 0 1.614583333333333vw 3.072916666666667vw
@@ -23,9 +30,17 @@
 	color share-white
 	background-color phone-text-bg2
 	border .2083333333333333vw solid share-white
+	@media only screen and (max-width: 768px)
+		width 60.6875vw
 
 	&__one
 		font-size 4.0625vw
+		@media only screen and (max-width: 768px)
+			font-size 7.0625vw
+			text-align center
 
 	&__two
 		font-size 2.135416666666667vw
+		@media only screen and (max-width: 768px)
+			font-size 4.0625vw
+			text-align center
